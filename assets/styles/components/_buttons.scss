@@ -1,10 +1,9 @@
-.so-widget-sow-button .ow-button-base a{
-	background: $brand-primary;
-	border-color: $brand-primary;
-	border-radius: 2px;
+.ow-button-base a{
+	font-weight:700;
 }
-
-.so-widget-sow-button .ow-button-base a.ow-button-hover:hover{
-	background: lighten($brand-primary, 10%);
-	border-bottom-color: darken($brand-primary, 10%);
+.ow-button-base a:hover{
+	text-decoration:none;
+}
+.btn.btn-primary:hover{
+	background-color: lighten($brand-primary, 10%);
 }

@@ -4,6 +4,29 @@ $icon-font-path:        "../fonts/";
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
+$screen-sm: 769px;
 
 // Colors
-$brand-primary:         rgba(90, 46, 46, 0.95);
+$brand-primary:         	rgba(90, 46, 46, 0.95);
+$brand-secondary:         	rgba(223, 186, 105, 0.95);
+
+// Typography 
+$font-family-sans-serif:	'Lato', 'Arial', sans-serif;
+$font-family-serif:			'Roboto Slab', 'Georgia', serif;
+$line-height-base:			1.5;
+$text-color: 				#787a80;
+$link-hover-color: 			#dfba69;
+$headings-font-family:    	$font-family-serif;
+$headings-font-weight:    	300;
+$headings-line-height:    	1.3;
+$headings-color:          	#2c2e33;
+
+// Nav
+$navbar-height:63px;
+$navbar-inverse-link-hover-bg:              rgba(255, 255, 255, 0.2);
+$navbar-inverse-link-active-bg:             rgba(255, 255, 255, 0.2);
+$navbar-inverse-link-active-color:          #fff;
+$nav-link-padding:                          20px 30px 21px;
+// Buttons
+$border-radius-base: 2px;
+$btn-font-weight: 700;
