@@ -1,0 +1,30 @@
+footer{
+  .container:first-child{
+    padding: 20px 0 40px;
+  }
+  .container:nth-child(2){
+    padding: 40px 0 20px;
+  }
+  background-color: rgb(27, 28, 31);
+  a{
+    color: #fff;
+    &:hover{
+      color: $link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  ul.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      a{
+        padding: 3px 8px;
+      }
+    }
+  }
+
+  
+}

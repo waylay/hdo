@@ -11,7 +11,7 @@
 		text-align: right;
 		.btn{
 			font-size: 15px;
-			padding:13px 45.5px;
+			padding:12.5px 45.5px;
 			border:medium none;
 			line-height: 1em;
 		}
@@ -36,8 +36,10 @@
 .navbar-inverse{
 	background-color: $brand-primary;
 	font-family: $font-family-serif;
-	font-weight:normal;
+	font-weight: normal;
+	font-size: 15px;
 	margin-bottom: 0;
+	border-width:0;
 	.nav{
 		float: none;
 		text-align:center;
@@ -45,7 +47,16 @@
 			float: none;
 			display: inline-block;
 		}
-
+		.caret{
+			margin-left: -1.7px;
+		}
+		.dropdown-menu{
+			li a{
+				font-weight: 300;
+		    	font-size: 14px;
+		    	font-family: $font-family-sans-serif;
+			}
+		}
 	}
 }
 

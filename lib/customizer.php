@@ -34,7 +34,7 @@ function add_header_area_settings($wp_customize) {
 			'label' => __( 'Upload Logo' ),
 			'section' => 'title_tagline',
 			'settings' => 'header_logo',
-		) ) 
+		) )
 	);
 
 	// add a setting for the header text
@@ -45,7 +45,7 @@ function add_header_area_settings($wp_customize) {
 			'type' => 'textarea',
 			'label' => 'Header Text',
 			'section' => 'title_tagline',
-		) 
+		)
 	);
 
 	// add a setting for the header text
@@ -56,7 +56,7 @@ function add_header_area_settings($wp_customize) {
 			'type' => 'textarea',
 			'label' => 'Header Text',
 			'section' => 'title_tagline',
-		) 
+		)
 	);
 
 	// add a setting for the header button
@@ -67,7 +67,7 @@ function add_header_area_settings($wp_customize) {
 			'type' => 'text',
 			'label' => 'Button Text',
 			'section' => 'title_tagline',
-		) 
+		)
 	);
 
 	// add a setting for the header button
@@ -78,7 +78,7 @@ function add_header_area_settings($wp_customize) {
 			'type' => 'url',
 			'label' => 'Button Link',
 			'section' => 'title_tagline',
-		) 
+		)
 	);
 
 }
