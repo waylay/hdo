@@ -1,6 +1,14 @@
 /* SiteOrigins Buider Defaults */
+
+/* reset */
+p, menu, figure, fieldset, ul, ol, dl, blockquote, table, form, pre, hr{
+  margin-bottom: .9em;
+}
 html{
 	font-weight:300;
+	h2,h4,h5,.h2,.h4,.h5{
+		font-family: $font-family-sans-serif;
+	}
 }
 img{
 	max-width:100%;
@@ -9,11 +17,18 @@ img{
 p{
 	margin-bottom:0.9em;
 }
+ul, ol {
+    padding-left: 1.75em;
+}
 .fixed-background{
 	background-attachment: fixed;
 	background-position: 50% 0;
 }
-
+.page:not(.home) .main, .single .main{
+	h2,h3,h4{
+		font-weight: 700;
+	}
+}
 .so-panel.widget_siteorigin-panels-builder .panel-widget-style{
 	padding: 15px;
 }
@@ -21,19 +36,15 @@ p{
 .so-panel{
 	h1{
 		line-height: 1 !important;
-		margin:0 0 5px !important;
+		margin:0 0 7.5px !important;
 	}
 	h2{
-		font-family: $font-family-sans-serif;
 		font-weight: 700;
 		line-height: 1;
 		margin:0 !important;
 	}
-	h5{
-		font-family: $font-family-sans-serif;
-	}
-	a:hover{
-		text-decoration: none;
+	a,a:hover{
+		text-decoration: none !important;
 	}
 	.textwidget{
 		h2 a{

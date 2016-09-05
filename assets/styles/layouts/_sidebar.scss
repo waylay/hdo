@@ -1,0 +1,13 @@
+.sidebar{
+  section{
+    @media only screen and (min-width: $screen-md-min){
+      margin-right: 7px;
+    }
+  }
+  .so-panel .textwidget h2 a{
+    font-family: $font-family-serif;
+    padding-top:1px;
+    padding-bottom: 11px;
+    font-size: 24px;
+  }
+}

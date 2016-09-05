@@ -18,6 +18,15 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+
+    <?php  if(is_page() && !is_front_page()): ?>
+    <div class="text-center page-top">
+      <h1>COMPREHENSIVE DENTAL CARE</h1>
+      <h2>A TOP RATED LOCAL® DENTAL PRACTICE</h2>
+    </div>
+
+    <?php endif; ?>
+
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
