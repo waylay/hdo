@@ -1,3 +1,6 @@
+body:not(.home) .main{
+  padding-top:50px;
+}
 .page-top{
   padding-bottom: 20px;
   padding-top: 20px;
@@ -13,7 +16,7 @@
   }
 }
 .page-header{
-  margin: 50px 0 0;
+  margin: 0;
   padding-bottom: 0;
   border-bottom: medium none;
   h1{
