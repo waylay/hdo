@@ -30,11 +30,22 @@ use Roots\Sage\Wrapper;
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
-          <?php include Wrapper\template_path(); ?>
+          <?php include Wrapper\template_path();
+          if(!get_post_meta( get_the_ID(), 'hide-bottom-cta', true )){
+            dynamic_sidebar('sidebar-cta');
+          }
+          ?>
+
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
+          <?php if(get_post_meta( get_the_ID(), 'show-alternative-sidebar', true )){ ?>
+            <div class="sidebar-alternative">
+              <?php dynamic_sidebar('sidebar-alternative'); ?>
+            </div><!-- /.sidebar -->
+          <?php }else{
+            include Wrapper\sidebar_path(); }
+          ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->

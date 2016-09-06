@@ -13,3 +13,264 @@
   @extend .btn;
   @extend .btn-default;
 }
+
+
+/* Bootstrap Ninja Forms */
+/* ==========================================================================
+   $FORMS
+   ========================================================================== */
+
+
+/**
+ * Normalize Non-controls
+ */
+
+form {
+    margin-bottom: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-size: 1.5em;
+    line-height: inherit;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/**
+ * Normalize form controls
+ */
+
+// Override content-box in Normalize (* isn't specific enough)
+input[type="search"] {
+    box-sizing: border-box;
+}
+
+// Set the height of select and file controls to match text inputs
+input[type="file"] {
+    display: block;
+}
+
+// Make range inputs behave like textual form controls
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+
+// Make inputs match similarly to text inputs on webkit browsers
+textarea,
+select:not([multiple]),
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"] {
+    -webkit-appearance: none;
+}
+
+/**
+ * Common Form controls
+ *
+ * Shared size and type resets for form controls. Apply `.form-control` to any
+ * of the following form controls:
+ */
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"] {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  height: 2.7em;
+  padding: .6em .875em;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 0;
+  color: #222;
+
+}
+
+select:not([multiple]),
+select:not([size]) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+
+textarea,
+select[size],
+select[multiple] {
+    height: auto;
+}
+
+
+/**
+ * Add background image on select for webkit browsers
+ */
+
+select:not([multiple]):not(*:root) {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOSAyMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOSAyMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBmaWxsPSIjRTZFNkU2IiBkPSJNNC41LDE5LjljLTIuNCwwLTQuNC0yLTQuNC00LjR2LTExYzAtMi40LDItNC40LDQuNC00LjRjMi40LDAsNC40LDIsNC40LDQuNHYxMQ0KCQlDOC45LDE3LjksNi45LDE5LjksNC41LDE5Ljl6Ii8+DQoJPHBhdGggZmlsbD0iIzgwODA4MCIgZD0iTTQuNSwwLjJjMi4zLDAsNC4yLDEuOSw0LjIsNC4ydjExYzAsMi4zLTEuOSw0LjItNC4yLDQuMnMtNC4yLTEuOS00LjItNC4ydi0xMUMwLjMsMi4yLDIuMiwwLjIsNC41LDAuMg0KCQkgTTQuNSwwQzIsMCwwLDIsMCw0LjV2MTFDMCwxOCwyLDIwLDQuNSwyMFM5LDE4LDksMTUuNXYtMTFDOSwyLDcsMCw0LjUsMEw0LjUsMHoiLz4NCjwvZz4NCjxnPg0KCTxwb2x5Z29uIGZpbGw9IiMzMzMzMzMiIHBvaW50cz0iNy41LDggNC41LDMgMS41LDggCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiMzMzMzMzMiIHBvaW50cz0iMS41LDEyIDQuNSwxNyA3LjUsMTIgCSIvPg0KPC9nPg0KPC9zdmc+DQo=);
+    background-repeat: no-repeat;
+    background-position: 99.25% 50%;
+    background-size: auto 1.25em;
+}
+
+/**
+ * Reset select for android browser
+ */
+
+.browser-android select:not([multiple]):not(*:root) {
+    -webkit-appearance: menulist;
+    background-image: none;
+}
+
+/**
+ * Input Sizing
+ */
+/*
+.input-lg {
+  font-size: @font-size-large;
+}
+.input-sm {
+  font-size: @font-size-small;
+}
+*/
+
+
+/**
+ * Help text
+ */
+
+.help-block {
+    display: block; // account for any element using help-block
+    margin-top: .36em;
+    margin-bottom: .71em;
+    font-size: 90%;
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Inline Forms
+ */
+
+.form-inline {
+    label,
+    select,
+    textarea,
+    input {
+        width: auto;
+    }
+}
+
+/* Focus */
+select:focus, textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus {
+    outline: 1px solid #129fea;
+    outline-offset: -2px;
+}
+
+/**
+ * Form groups
+ */
+
+.form-group {
+    margin-bottom: 0;
+}
+.ninja-forms-all-fields-wrap {
+    margin-left: -10px;
+}
+.ninja-forms-all-fields-wrap>* {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+}
+.ninja-forms-all-fields-wrap>.size-1of2-wrap, .ninja-forms-all-fields-wrap>.size-2of4-wrap, .ninja-forms-all-fields-wrap>.size-3of6-wrap {
+    width: 50%;
+}
+.ninja-forms-required-items{
+  display: none;
+}
+.submit-wrap .button{
+  color: #fff;
+  background: rgba(90,46,46,0.95);
+  padding: 14px 0;
+  width: 100% !important;
+  margin-top: 30px;
+  border:medium none;
+  border-radius: 5px;
+  &:hover{
+    background: rgba(104,53,53,0.95);
+  }
+}
+.button-sub-text{
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: .3em;
+}
+
+nf-fields-wrap{
+  nf-field:nth-child(-n+4){
+    width: 50%;
+    float: left;
+    padding-bottom: 25px;
+  }
+  .nf-field-container{
+    margin-bottom: 0;
+  }
+  .nf-input-limit{
+    margin-top: 0;
+  }
+  .nf-after-field{
+    position: absolute;
+  }
+  .nf-field-element textarea{
+    height: 100px;
+  }
+  .nf-field-element select{
+    height: 3em;
+  }
+  .label-left .nf-field-label{
+    width: 40%;
+  }
+  .label-left .nf-field-element{
+    width: 60%;
+  }
+  .label-above .nf-field-label{
+    margin-bottom: 2px;
+    label{
+      margin-top:20px;
+    }
+  }
+
+}

@@ -27,11 +27,30 @@
 }
 
 .main{
+  padding-bottom: 50px;
   h4{
     margin-top: 0;
     margin-bottom: 15px;
   }
   a{
     text-decoration: underline;
+  }
+}
+
+.contact{
+  .page-header{
+    text-indent: -999px;
+    margin:0;
+    h1{
+      margin: 0;
+    }
+  }
+  .panel-grid-cell:nth-child(2){
+    padding-left: 20px !important;
+  }
+}
+.new-patient-forms, .contact{
+  .ow-button-base a{
+    padding: 14px 0;
   }
 }
