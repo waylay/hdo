@@ -2,30 +2,22 @@
   <div class="container">
     <!-- Mobile Header -->
     <div class="content row hidden-sm hidden-md hidden-lg mobile-header">
-        <nav id="offcanvas-menu" class="navmenu navmenu-inverse navmenu-fixed-left offcanvas" role="navigation">
-          <div class="container">
-            <?php
-            if (has_nav_menu('primary_navigation')) :
-              wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
-            endif;
-            ?>
-          </div>
-        </nav>
+
         <div class="col-xs-3">
-        
+
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas-menu" data-canvas="body">
+            <button type="button" class="navbar-toggle">
               <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </button>            
+            </button>
           </div>
 
         </div>
 
         <div class="col-xs-6">
-          <?php if ( get_theme_mod( 'header_logo' ) ) : // Logo ?> 
+          <?php if ( get_theme_mod( 'header_logo' ) ) : // Logo ?>
             <a href="<?php echo get_bloginfo('url'); ?>">
              <img src="<?php echo get_theme_mod( 'header_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
             </a>
@@ -34,12 +26,24 @@
           <?php endif; ?>
         </div>
 
-        <div class="col-xs-3">
+        <div class="col-xs-3 mobile-phone">
+          <a href="tel:13527504111">
+            <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+          </a>
+        </div>
 
+        <div class="mobile-drawer mobile-drawer-left">
+          <nav class="navmenu navmenu-inverse" role="navigation">
+              <?php
+              if (has_nav_menu('primary_navigation')) :
+                wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
+              endif;
+              ?>
+          </nav>
         </div>
 
     </div>
-      
+
       <!-- Desktop Header -->
       <div class="content row hidden-xs desktop-header">
 
@@ -72,16 +76,16 @@
 
       </div>
     </div>
-    
+
     <!-- Main Navigation -->
     <nav class="navbar navbar-inverse navbar-static-top collapse navbar-collapse bg-primary" role="navigation">
-      <div class="container">
+
         <?php
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
         endif;
         ?>
-      </div>
+
     </nav>
-  
+
 </header>

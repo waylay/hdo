@@ -18,10 +18,25 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        var b= $('body');
+        $("main").click(function() {
+          b.removeClass("mobile-drawer-left-open");
+        });
+        $( ".navbar-toggle" ).click(function(e) {
+          e.preventDefault();
+          b.toggleClass("mobile-drawer-left-open");
+        });
+
+        // grab an element
+        var myElement = document.querySelector(".mobile-header");
+        // construct an instance of Headroom, passing the element
+        var headroom  = new Headroom(myElement);
+        // initialise
+        headroom.init();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+
       }
     },
     // Home page

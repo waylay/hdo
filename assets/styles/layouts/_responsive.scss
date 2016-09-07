@@ -1,0 +1,60 @@
+@media only screen and (max-width: $screen-xs-min){
+  nf-fields-wrap{
+    nf-field:nth-child(-n+4){
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-sm-min){
+  .page-top{
+    margin-top: 50px;
+    padding-left:15px;
+    padding-right:15px;
+    h1{
+      font-size: 24px;
+    }
+    h2{
+      font-size: 18px;
+    }
+  }
+  body:not(.home) .main{
+    text-align: center;
+    padding-top: 20px;
+    ul{
+      text-align: left;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+  .so-widget-sow-button{
+    width: 100%;
+    a{
+      width: 100% !important;
+    }
+    &+ .so-widget-sow-button{
+      margin-top:15px !important;
+    }
+  }
+}
+@media only screen and (max-width: $screen-sm-max){
+  .navbar-brand img{
+    max-width: 250px;
+  }
+  .desktop-header .header_button .btn{
+    padding: 12.5px 25.5px;
+  }
+  .navbar-inverse .navbar-nav>li>a{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .so-panel{
+    p{
+      padding-left:0 !important;
+      padding-right:0 !important;
+
+    }
+  }
+}

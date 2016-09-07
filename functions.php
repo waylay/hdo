@@ -45,13 +45,13 @@ function convert_seo_meta() {
     $uxi_seo_description = get_post_meta($post_id, "uxi_seo_description", true);
     update_post_meta($post_id, "_yoast_wpseo_title", $uxi_seo_title);
     update_post_meta($post_id, "_yoast_wpseo_metadesc", $uxi_seo_description);
-    update_post_meta($post_id, "_yoast_wpseo_focuskw_text_input", "Dentist Lady Lake");
-    update_post_meta($post_id, "_yoast_wpseo_focuskw", "Dentist Lady Lake");
+    update_post_meta($post_id, "_yoast_wpseo_focuskw_text_input", "Dentist Lady Lake $single_page->post_title");
+    update_post_meta($post_id, "_yoast_wpseo_focuskw", "Dentist Lady Lake $single_page->post_title");
 
   }
 
 }
 
 if(isset($_GET['import_seo']) && $_GET['import_seo'] == "true"){
-  convert_seo_meta();
+  //convert_seo_meta();
 }

@@ -127,9 +127,8 @@ function assets() {
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
-
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-  wp_enqueue_script('jasny/js', '//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js', ['jquery'], null, true);
+
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
